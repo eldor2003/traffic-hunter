@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              "pulse-glow-light": "pulse-glow-light 3s ease infinite",
+            },
+            keyframes: {
+              // 'pulse-glow-light': {
+              //   '0%, 100%': {
+              //     opacity: '1',
+              //   },
+              //   '50%': {
+              //     opacity: '.5',
+              //   },
+              // },
+            },
+            fontFamily: {
+              gilroy: ["Gilroy"],
+              vela: ["Vela Sans GX"],
+              greycliff: ["Greycliff CF"],
+            },
+            colors: {
+              gradientStart: "#FD8806",
+              gradientEnd: "#DB3F2C",
+            },
+
+            lineHeight: {
+              normal: "normal", // Normal line-height qo‘shildi
+            },
+            backgroundImage: {
+              "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+              "custom-gradient":
+                "linear-gradient(257deg, #FD8806 25.37%, #DB3F2C 125.31%)",
+            },
+          },
+          // plugins: [
+          //     require('@tailwindcss/forms'),
+          //     require('@tailwindcss/typography'),
+          // ],
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./fonts/font.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body class="bg-[#161423]">
+    <div class="wrapper">
+      <section class="w-full pb-[50px] md:px-2 px-3">
+        <div class="max-w-[1764px] w-full mx-auto py-[40px]">
+          <div
+            class="flex justify-between items-center md:mb-[70px] sm:mb-[40px] mb-[20px]"
+          >
+            <h2
+              class="md:text-[52px] sm:text-[30px] text-[25px] font-vela font-[700] font-gilroy text-white"
+            >
+              Мои кейсы по контексту
+            </h2>
+
+            <a href="#" class="sm:flex items-center gap-3 hidden">
+              <span
+                class="text-[24px] font-[600] font-vela bg-gradient-to-r from-[#FD8806] to-[#DB3F2C] bg-clip-text text-transparent"
+              >
+                Показать все
+              </span>
+              <img
+                class="translate-y-0"
+                src="./img/arrow__right.png"
+                alt="img"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Swiper -->
+        <div
+          class="reklamaSwiper__container max-w-[1825px] mx-auto relative w-full"
+        >
+          <div
+            class="reklamaSwiper max-w-[1764px] w-full mx-auto sm:overflow-hidden overflow-visible mb-[50px]"
+          >
+            <div class="swiper-wrapper">
+              <!-- slide 1 -->
+              <div
+                class="swiper-slide w-[769px]:max-w-[calc(33%-20px)] w-full flex flex-col p-5 rounded-[20px] border border-[#f16f188b] bg-[#141221] shadow-[inset_0px_4px_30px_rgba(12,10,25,0.5)] backdrop-blur-[150px]"
+              >
+                <div class="w-full sm:flex justify-between mb-5 hidden">
+                  <p
+                    class="text-white font-vela text-[18px] border-l border-white px-3"
+                  >
+                    Seo
+                  </p>
+                  <a
+                    href="#"
+                    class="text-white font-vela text-[18px] flex justify-between items-center gap-[7px]"
+                  >
+                    <span class="font-vela">Подробнее</span>
+                    <img src="./img/link__icon.png" alt="icon" />
+                  </a>
+                </div>
+
+                <div
+                  class="w-full flex sm:items-center gap-[13px] sm:flex-row flex-col items-start mb-5"
+                >
+                  <div
+                    class="sm:w-[132px] w-full flex items-center sm:gap-0 gap-[12px]"
+                  >
+                    <img
+                      src="./img/img__s1.png"
+                      alt="img"
+                      class="sm:w-auto w-[75px]"
+                    />
+                    <p
+                      class="sm:hidden block text-white font-vela sm:text-[18px] text-[15px] border-l border-white px-3"
+                    >
+                      Seo
+                    </p>
+                  </div>
+                  <div
+                    class="sm:w-[calc(100%-142px) w-full flex items-center gap-[13px]"
+                  >
+                    <div
+                      class="w-[calc(50%-10px)] sm:px-4 px-4 sm:py-5 py-3 bg-[#ffffff0c] rounded-[12px]"
+                    >
+                      <h3
+                        class="sm:text-[35px] text-[28px] text-white font-greycliff leading-normal"
+                      >
+                        100
+                      </h3>
+                      <p
+                        class="sm:text-[16px] text-[14px] text-white font-greycliff opacity-70"
+                      >
+                        ключей в ТОП 10
+                      </p>
+                    </div>
+                    <div
+                      class="w-[calc(50%-10px)] sm:px-4 px-4 sm:py-5 py-3 bg-[#ffffff0c] rounded-[12px]"
+                    >
+                      <h3
+                        class="sm:text-[35px] text-[28px] text-white font-greycliff leading-normal"
+                      >
+                        50
+                      </h3>
+                      <p
+                        class="sm:text-[16px] text-[14px] text-white font-greycliff opacity-70"
+                      >
+                        ключей в ТОП 3
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="sm:text-[26px] text-[15px] text-white">
+                    Как сформировать успешную контент-стратегию FinTech
+                    компании: техника небоскреба + лайфхаки
+                  </p>
+                </div>
+
+                <div class="sm:hidden block mt-4 w-full">
+                  <a
+                    href="#"
+                    class="text-white font-vela text-[18px] flex justify-start items-center gap-[7px] pl-3"
+                  >
+                    <span class="font-vela">Подробнее</span>
+                    <img src="./img/link__icon.png" alt="icon" />
+                  </a>
+                </div>
+              </div>
+              <!-- slide 2 -->
+              <div
+                class="swiper-slide w-[769px]:max-w-[calc(33%-20px)] w-full flex flex-col p-5 rounded-[20px] border border-[#f16f188b] bg-[#141221] shadow-[inset_0px_4px_30px_rgba(12,10,25,0.5)] backdrop-blur-[150px]"
+              >
+                <div class="w-full sm:flex justify-between mb-5 hidden">
+                  <p
+                    class="text-white font-vela text-[18px] border-l border-white px-3"
+                  >
+                    Контекстная реклама
+                  </p>
+                  <a
+                    href="#"
+                    class="text-white font-vela text-[18px] flex justify-between items-center gap-[7px]"
+                  >
+                    <span class="font-vela">Подробнее</span>
+                    <img src="./img/link__icon.png" alt="icon" />
+                  </a>
+                </div>
+
+                <div
+                  class="w-full flex sm:items-center gap-[13px] sm:flex-row flex-col items-start mb-5"
+                >
+                  <div
+                    class="sm:w-[132px] w-full flex items-center sm:gap-0 gap-[12px]"
+                  >
+                    <img
+                      src="./img/img__s2.png"
+                      alt="img"
+                      class="sm:w-auto w-[75px]"
+                    />
+                    <p
+                      class="sm:hidden block text-white font-vela sm:text-[18px] text-[15px] border-l border-white px-3"
+                    >
+                      Контекстная реклама
+                    </p>
+                  </div>
+                  <div
+                    class="sm:w-[calc(100%-142px) w-full flex items-center gap-[13px]"
+                  >
+                    <div
+                      class="w-[calc(50%-10px)] sm:px-4 px-4 sm:py-5 py-3 bg-[#ffffff0c] rounded-[12px]"
+                    >
+                      <h3
+                        class="sm:text-[35px] text-[28px] text-white font-greycliff leading-normal"
+                      >
+                        100
+                      </h3>
+                      <p
+                        class="sm:text-[16px] text-[14px] text-white font-greycliff opacity-70"
+                      >
+                        ключей в ТОП 10
+                      </p>
+                    </div>
+                    <div
+                      class="w-[calc(50%-10px)] sm:px-4 px-4 sm:py-5 py-3 bg-[#ffffff0c] rounded-[12px]"
+                    >
+                      <h3
+                        class="sm:text-[35px] text-[28px] text-white font-greycliff leading-normal"
+                      >
+                        50
+                      </h3>
+                      <p
+                        class="sm:text-[16px] text-[14px] text-white font-greycliff opacity-70"
+                      >
+                        ключей в ТОП 3
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="sm:text-[26px] text-[15px] text-white">
+                    Увеличение конверсии на 40% с новым контентом
+                  </p>
+                </div>
+
+                <div class="sm:hidden block mt-4 w-full">
+                  <a
+                    href="#"
+                    class="text-white font-vela text-[18px] flex justify-start items-center gap-[7px] pl-3"
+                  >
+                    <span class="font-vela">Подробнее</span>
+                    <img src="./img/link__icon.png" alt="icon" />
+                  </a>
+                </div>
+              </div>
+              <!-- slide 3 -->
+              <div
+                class="swiper-slide w-[769px]:max-w-[calc(33%-20px)] w-full flex flex-col p-5 rounded-[20px] border border-[#f16f188b] bg-[#141221] shadow-[inset_0px_4px_30px_rgba(12,10,25,0.5)] backdrop-blur-[150px]"
+              >
+                <div class="w-full sm:flex justify-between mb-5 hidden">
+                  <p
+                    class="text-white font-vela text-[18px] border-l border-white px-3"
+                  >
+                    Контекстная реклама
+                  </p>
+                  <a
+                    href="#"
+                    class="text-white font-vela text-[18px] flex justify-between items-center gap-[7px]"
+                  >
+                    <span class="font-vela">Подробнее</span>
+                    <img src="./img/link__icon.png" alt="icon" />
+                  </a>
+                </div>
+
+                <div
+                  class="w-full flex sm:items-center gap-[13px] sm:flex-row flex-col items-start mb-5"
+                >
+                  <div
+                    class="sm:w-[132px] w-full flex items-center sm:gap-0 gap-[12px]"
+                  >
+                    <img
+                      src="./img/img__s3.png"
+                      alt="img"
+                      class="sm:w-auto w-[75px]"
+                    />
+                    <p
+                      class="sm:hidden block text-white font-vela sm:text-[18px] text-[15px] border-l border-white px-3"
+                    >
+                      Контекстная реклама
+                    </p>
+                  </div>
+                  <div
+                    class="sm:w-[calc(100%-142px) w-full flex items-center gap-[13px]"
+                  >
+                    <div
+                      class="w-[calc(50%-10px)] sm:px-4 px-4 sm:py-5 py-3 bg-[#ffffff0c] rounded-[12px]"
+                    >
+                      <h3
+                        class="sm:text-[35px] text-[28px] text-white font-greycliff leading-normal"
+                      >
+                        100
+                      </h3>
+                      <p
+                        class="sm:text-[16px] text-[14px] text-white font-greycliff opacity-70"
+                      >
+                        ключей в ТОП 10
+                      </p>
+                    </div>
+                    <div
+                      class="w-[calc(50%-10px)] sm:px-4 px-4 sm:py-5 py-3 bg-[#ffffff0c] rounded-[12px]"
+                    >
+                      <h3
+                        class="sm:text-[35px] text-[28px] text-white font-greycliff leading-normal"
+                      >
+                        50
+                      </h3>
+                      <p
+                        class="sm:text-[16px] text-[14px] text-white font-greycliff opacity-70"
+                      >
+                        ключей в ТОП 3
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="sm:text-[26px] text-[15px] text-white">
+                    Увеличение конверсии на 40% с новым контентом
+                  </p>
+                </div>
+
+                <div class="sm:hidden block mt-4 w-full">
+                  <a
+                    href="#"
+                    class="text-white font-vela text-[18px] flex justify-start items-center gap-[7px] pl-3"
+                  >
+                    <span class="font-vela">Подробнее</span>
+                    <img src="./img/link__icon.png" alt="icon" />
+                  </a>
+                </div>
+              </div>
+              <!-- slide 4 -->
+              <div
+                class="swiper-slide w-[769px]:max-w-[calc(33%-20px)] w-full flex flex-col p-5 rounded-[20px] border border-[#f16f188b] bg-[#141221] shadow-[inset_0px_4px_30px_rgba(12,10,25,0.5)] backdrop-blur-[150px]"
+              >
+                <div class="w-full sm:flex justify-between mb-5 hidden">
+                  <p
+                    class="text-white font-vela text-[18px] border-l border-white px-3"
+                  >
+                    Контекстная реклама
+                  </p>
+                  <a
+                    href="#"
+                    class="text-white font-vela text-[18px] flex justify-between items-center gap-[7px]"
+                  >
+                    <span class="font-vela">Подробнее</span>
+                    <img src="./img/link__icon.png" alt="icon" />
+                  </a>
+                </div>
+
+                <div
+                  class="w-full flex sm:items-center gap-[13px] sm:flex-row flex-col items-start mb-5"
+                >
+                  <div
+                    class="sm:w-[132px] w-full flex items-center sm:gap-0 gap-[12px]"
+                  >
+                    <img
+                      src="./img/img__s3.png"
+                      alt="img"
+                      class="sm:w-auto w-[75px]"
+                    />
+                    <p
+                      class="sm:hidden block text-white font-vela sm:text-[18px] text-[15px] border-l border-white px-3"
+                    >
+                      Контекстная реклама
+                    </p>
+                  </div>
+                  <div
+                    class="sm:w-[calc(100%-142px) w-full flex items-center gap-[13px]"
+                  >
+                    <div
+                      class="w-[calc(50%-10px)] sm:px-4 px-4 sm:py-5 py-3 bg-[#ffffff0c] rounded-[12px]"
+                    >
+                      <h3
+                        class="sm:text-[35px] text-[28px] text-white font-greycliff leading-normal"
+                      >
+                        100
+                      </h3>
+                      <p
+                        class="sm:text-[16px] text-[14px] text-white font-greycliff opacity-70"
+                      >
+                        ключей в ТОП 10
+                      </p>
+                    </div>
+                    <div
+                      class="w-[calc(50%-10px)] sm:px-4 px-4 sm:py-5 py-3 bg-[#ffffff0c] rounded-[12px]"
+                    >
+                      <h3
+                        class="sm:text-[35px] text-[28px] text-white font-greycliff leading-normal"
+                      >
+                        50
+                      </h3>
+                      <p
+                        class="sm:text-[16px] text-[14px] text-white font-greycliff opacity-70"
+                      >
+                        ключей в ТОП 3
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="sm:text-[26px] text-[15px] text-white">
+                    Увеличение конверсии на 40% с новым контентом
+                  </p>
+                </div>
+
+                <div class="sm:hidden block mt-4 w-full">
+                  <a
+                    href="#"
+                    class="text-white font-vela text-[18px] flex justify-start items-center gap-[7px] pl-3"
+                  >
+                    <span class="font-vela">Подробнее</span>
+                    <img src="./img/link__icon.png" alt="icon" />
+                  </a>
+                </div>
+              </div>
+              <!-- slide 5 -->
+              <div
+                class="swiper-slide w-[769px]:max-w-[calc(33%-20px)] w-full flex flex-col p-5 rounded-[20px] border border-[#f16f188b] bg-[#141221] shadow-[inset_0px_4px_30px_rgba(12,10,25,0.5)] backdrop-blur-[150px]"
+              >
+                <div class="w-full sm:flex justify-between mb-5 hidden">
+                  <p
+                    class="text-white font-vela text-[18px] border-l border-white px-3"
+                  >
+                    Контекстная реклама
+                  </p>
+                  <a
+                    href="#"
+                    class="text-white font-vela text-[18px] flex justify-between items-center gap-[7px]"
+                  >
+                    <span class="font-vela">Подробнее</span>
+                    <img src="./img/link__icon.png" alt="icon" />
+                  </a>
+                </div>
+
+                <div
+                  class="w-full flex sm:items-center gap-[13px] sm:flex-row flex-col items-start mb-5"
+                >
+                  <div
+                    class="sm:w-[132px] w-full flex items-center sm:gap-0 gap-[12px]"
+                  >
+                    <img
+                      src="./img/img__s3.png"
+                      alt="img"
+                      class="sm:w-auto w-[75px]"
+                    />
+                    <p
+                      class="sm:hidden block text-white font-vela sm:text-[18px] text-[15px] border-l border-white px-3"
+                    >
+                      Контекстная реклама
+                    </p>
+                  </div>
+                  <div
+                    class="sm:w-[calc(100%-142px) w-full flex items-center gap-[13px]"
+                  >
+                    <div
+                      class="w-[calc(50%-10px)] sm:px-4 px-4 sm:py-5 py-3 bg-[#ffffff0c] rounded-[12px]"
+                    >
+                      <h3
+                        class="sm:text-[35px] text-[28px] text-white font-greycliff leading-normal"
+                      >
+                        100
+                      </h3>
+                      <p
+                        class="sm:text-[16px] text-[14px] text-white font-greycliff opacity-70"
+                      >
+                        ключей в ТОП 10
+                      </p>
+                    </div>
+                    <div
+                      class="w-[calc(50%-10px)] sm:px-4 px-4 sm:py-5 py-3 bg-[#ffffff0c] rounded-[12px]"
+                    >
+                      <h3
+                        class="sm:text-[35px] text-[28px] text-white font-greycliff leading-normal"
+                      >
+                        50
+                      </h3>
+                      <p
+                        class="sm:text-[16px] text-[14px] text-white font-greycliff opacity-70"
+                      >
+                        ключей в ТОП 3
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="sm:text-[26px] text-[15px] text-white">
+                    Увеличение конверсии на 40% с новым контентом
+                  </p>
+                </div>
+
+                <div class="sm:hidden block mt-4 w-full">
+                  <a
+                    href="#"
+                    class="text-white font-vela text-[18px] flex justify-start items-center gap-[7px] pl-3"
+                  >
+                    <span class="font-vela">Подробнее</span>
+                    <img src="./img/link__icon.png" alt="icon" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination sm:hidden block"></div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div
+            class="sm:block hidden swiper-button-prev bg-[#E26009] w-[52px] h-[52px] p-3 rounded-[12px]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.28 16.2807C7.13938 16.4211 6.94875 16.5 6.75 16.5C6.55125 16.5 6.36062 16.4211 6.22 16.2807L2.47 12.5307C2.32955 12.39 2.25066 12.1994 2.25066 12.0007C2.25066 11.8019 2.32955 11.6113 2.47 11.4707L6.22 7.72066C6.28866 7.64697 6.37146 7.58787 6.46346 7.54688C6.55546 7.50589 6.65478 7.48384 6.75548 7.48207C6.85618 7.48029 6.95621 7.49882 7.0496 7.53654C7.14299 7.57426 7.22782 7.6304 7.29904 7.70162C7.37026 7.77284 7.4264 7.85767 7.46412 7.95106C7.50184 8.04445 7.52037 8.14448 7.51859 8.24518C7.51681 8.34588 7.49477 8.4452 7.45378 8.5372C7.41279 8.6292 7.35369 8.712 7.28 8.78066L4.81 11.2507L21 11.2507C21.1989 11.2507 21.3897 11.3297 21.5303 11.4703C21.671 11.611 21.75 11.8017 21.75 12.0007C21.75 12.1996 21.671 12.3903 21.5303 12.531C21.3897 12.6716 21.1989 12.7507 21 12.7507L4.81 12.7507L7.28 15.2207C7.42045 15.3613 7.49934 15.5519 7.49934 15.7507C7.49934 15.9494 7.42045 16.14 7.28 16.2807Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div
+            class="sm:block hidden swiper-button-next bg-[#E26009] w-[52px] h-[52px] p-3 rounded-[12px]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16.72 7.71934C16.8606 7.57889 17.0512 7.5 17.25 7.5C17.4488 7.5 17.6394 7.57889 17.78 7.71934L21.53 11.4693C21.6705 11.61 21.7493 11.8006 21.7493 11.9993C21.7493 12.1981 21.6705 12.3887 21.53 12.5293L17.78 16.2793C17.7113 16.353 17.6285 16.4121 17.5365 16.4531C17.4445 16.4941 17.3452 16.5162 17.2445 16.5179C17.1438 16.5197 17.0438 16.5012 16.9504 16.4635C16.857 16.4257 16.7722 16.3696 16.701 16.2984C16.6297 16.2272 16.5736 16.1423 16.5359 16.0489C16.4982 15.9555 16.4796 15.8555 16.4814 15.7548C16.4832 15.6541 16.5052 15.5548 16.5462 15.4628C16.5872 15.3708 16.6463 15.288 16.72 15.2193L19.19 12.7493H3C2.80109 12.7493 2.61032 12.6703 2.46967 12.5297C2.32902 12.389 2.25 12.1983 2.25 11.9993C2.25 11.8004 2.32902 11.6097 2.46967 11.469C2.61032 11.3284 2.80109 11.2493 3 11.2493H19.19L16.72 8.77934C16.5795 8.63871 16.5007 8.44809 16.5007 8.24934C16.5007 8.05059 16.5795 7.85997 16.72 7.71934Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="sm:hidden flex justify-center">
+          <a href="#" class="flex items-center gap-3">
+            <span
+              class="sm:text-[24px] text-[15px] font-[600] font-vela bg-gradient-to-r from-[#FD8806] to-[#DB3F2C] bg-clip-text text-transparent"
+            >
+              Показать все
+            </span>
+            <img
+              class="translate-y-0 sm:w-auto w-[20px]"
+              src="./img/arrow__right.png"
+              alt="img"
+            />
+          </a>
+        </div>
+
+        <!-- line -->
+        <div class="w-[100vw] flex justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1920"
+            height="61"
+            viewBox="0 0 1920 61"
+            fill="none"
+          >
+            <path
+              d="M1920 60L1638 59.9999L1598 1.00011L322 1.00003L282 59.9999L0 59.9998"
+              stroke="white"
+              stroke-opacity="0.4"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+
+        <!-- Чем отличаются моя настройка от настройки моих коллег? -->
+        <div
+          class="max-w-[1764px] w-full mx-auto sm:pt-[40px] pb-[40px] mb-[40px]"
+        >
+          <div class="relative pt-0">
+            <h2
+              class="text-white md:text-[52px] sm:text-[30px] text-[25px] font-vela font-[700] text-center md:mb-[70px] sm:mb-[40px] mb-[20px]"
+            >
+              Чем отличаются моя настройка от настройки <br />
+              моих коллег?
+            </h2>
+
+            <div class="cards max-w-[1480px] flex justify-center mx-auto">
+              <div
+                class="max-w-[1480px] w-full overflow-auto rounded-[20px] border-[#FEFEFE] bg-white/5 shadow-md shadow-black/20 backdrop-blur-[200px] flex justify-center"
+              >
+                <table class="w-full border-collapse">
+                  <thead>
+                    <tr class="text-white">
+                      <th class="sm:block hidden"></th>
+                      <th
+                        class="p-4 text-lg font-bold text-[32px] table__col__bg"
+                      >
+                        <div
+                          class="flex items-center justify-center md:gap-[30px] gap-[10px] flex-wrap md:flex-row flex-col"
+                        >
+                          <div
+                            class="sm:w-[40px] w-[30px] sm:h-[40px] h-[30px] rounded-[6px] bg-gradient-to-br from-[#E26009] to-[#FF8831] shadow-[0px_0px_40px_0px_rgba(253,136,6,0.40)] flex justify-center items-center"
+                          >
+                            <img src="./img/chaqmoq.png" alt="icon" />
+                          </div>
+
+                          <div
+                            class="sm:flex items-center sm:gap-5 gap-2 hidden"
+                          >
+                            <img src="./img/askar.png" alt="icon" />
+
+                            <div
+                              class="lg:text-[28px] md:text-[22px] sm:text-[18px] text-[15px]"
+                            >
+                              TRAFFIC HUNTER
+                            </div>
+                          </div>
+                          <img
+                            class="sm:hidden block"
+                            src="./img/traffic__hunter.png"
+                            alt="img"
+                          />
+                        </div>
+                      </th>
+
+                      <th class="px-4">
+                        <div
+                          class="flex items-center justify-center md:gap-[30px] gap-[10px] flex-wrap md:flex-row flex-col"
+                        >
+                          <div
+                            class="sm:w-[40px] w-[30px] sm:h-[40px] h-[30px] rounded-[6px] bg-[#161423] flex justify-center items-center"
+                          >
+                            <img src="./img/dislike.png" alt="img" />
+                          </div>
+
+                          <div class="flex items-center gap-[10px]">
+                            <img
+                              src="./img/user.png"
+                              alt="img"
+                              class="sm:w-auto w-[30px]"
+                            />
+
+                            <h3
+                              class="lg:text-[28px] md:text-[22px] sm:text-[18px] text-[15px]"
+                            >
+                              Другие SEO
+                            </h3>
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="">
+                      <td
+                        class="sm:block hidden sm:text-[28px] text-[18px] font-vela font-[500] text-white pl-[40px] sm:px-[20px] px-[16px]"
+                      >
+                        Методы продвижения
+                      </td>
+                      <td
+                        class="p-4 text-white sm:text-[22px] text-[15px] sm:px-[20px] px-[16px]"
+                      >
+                        <div
+                          class="sm:hidden block text-[18px] font-[500] mb-3"
+                        >
+                          Методы продвижения
+                        </div>
+                        Использую только самые актуальные методы продвижения
+                      </td>
+                      <td
+                        class="p-4 text-white sm:text-[22px] text-[15px] sm:px-[20px] px-[16px]"
+                      >
+                        До сих пор пишут переспамленные SEO-тексты и закупают
+                        тонны некачественных сылок с сервисов по типу Сапы после
+                        чего сайт улетает под фильтр
+                      </td>
+                    </tr>
+                    <tr class="border-t border-gray-700 border-opacity-12">
+                      <td
+                        class="sm:block hidden sm:text-[28px] text-[18px] font-vela font-[500] text-white pl-[40px] sm:px-[20px] px-[16px]"
+                      >
+                        Языки программиро-вания
+                      </td>
+                      <td
+                        class="p-4 text-white sm:text-[22px] text-[15px] sm:px-[20px] px-[16px]"
+                      >
+                        <div
+                          class="sm:hidden block text-[18px] font-[500] mb-3"
+                        >
+                          Языки программиро-вания
+                        </div>
+                        Знаю: HTML, CSS, JS, PHP, понимаю как должен выглядеть
+                        код, как поисковые системы индексируют страницы и видят
+                        сайт в целом, могу вручную делать анализ проблем сайта.
+                      </td>
+                      <td
+                        class="p-4 text-white sm:text-[22px] text-[15px] sm:px-[20px] px-[16px]"
+                      >
+                        Не понимает как работают сайты и как поисковые боты
+                        индексируют код, только в теории, использует
+                        автоматические сервисы для анализа, которые не замечают
+                        многие проблемы
+                      </td>
+                    </tr>
+                    <tr class="border-t border-gray-700">
+                      <td
+                        class="sm:block hidden sm:text-[28px] text-[18px] font-vela font-[500] text-white pl-[40px] sm:px-[20px] px-[16px]"
+                      >
+                        Инструментыи софты
+                      </td>
+                      <td
+                        class="p-4 text-white sm:text-[22px] text-[15px] sm:px-[20px] px-[16px]"
+                      >
+                        <div
+                          class="sm:hidden block text-[18px] font-[500] mb-3"
+                        >
+                          Инструменты и софты
+                        </div>
+                        За долгие годы разработаны свои приватные инструменты и
+                        софт для эффективного продвижения, что позволяет
+                        добиваться результатов в кратчайшие сроки.
+                      </td>
+                      <td
+                        class="p-4 text-white sm:text-[22px] text-[15px] sm:px-[20px] px-[16px]"
+                      >
+                        Ничего нет своего, либо используются общие инструменты и
+                        софт, которые приносят больше вреда, чем пользы
+                      </td>
+                    </tr>
+                    <tr class="border-t border-gray-700">
+                      <td
+                        class="sm:block hidden sm:text-[28px] text-[18px] font-vela font-[500] text-white pl-[40px] py-[20px]"
+                      >
+                        Отзывы клиентов
+                      </td>
+                      <td
+                        class="p-4 text-white sm:text-[22px] text-[15px] sm:px-[20px] px-[16px]"
+                      >
+                        <div
+                          class="sm:hidden block text-[18px] font-[500] mb-3"
+                        >
+                          Отзывы клиентов
+                        </div>
+                        Клиенты остаются со мной на долгие годы и советуют меня
+                        своим знакомым и друзьям
+                      </td>
+                      <td
+                        class="p-4 text-white sm:text-[22px] text-[15px] sm:px-[20px] px-[16px]"
+                      >
+                        Разачаровываются в SEO думая, что подобное продвижение
+                        им не помогает привлечь клиентов
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Показатели -->
+        <div class="max-w-[1176px] w-full mx-auto mb-[30px]">
+          <div
+            class="w-full flex justify-between sm:flex-nowrap flex-wrap mb-[20px] gap-5"
+          >
+            <h3
+              class="sm:w-auto w-full text-white sm:text-[40px] text-[22px] font-vela mb-3 sm:text-start text-center"
+            >
+              Показатели
+            </h3>
+
+            <div class="w-full sm:hidden block mb-5">
+              <p
+                class="font-greycliff text-[#C6C3D9] sm:text-[22px] text-[15px] text-center"
+              >
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                текстов на латинице с начала XVI века.m Lorem Ipsum - это
+                текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+                Ipsum является стандартной "рыбой" для текстов на латинице с
+                начала XVI века.m
+              </p>
+            </div>
+
+            <div
+              class="sm:w-auto w-full flex items-center md:gap-[50px] sm:gap-[15px] gap-[10px]"
+            >
+              <div class="flex items-center sm:gap-[20px] gap-[10px]">
+                <div
+                  class="w-[40px] h-[40px] rounded-lg bg-gradient-to-br from-[#E26009] to-[#FF8831] shadow-[0_0_40px_rgba(253,136,6,0.40)]"
+                ></div>
+
+                <span
+                  class="text-white font-greycliff sm:text-[22px] text-[15px]"
+                >
+                  Мои показатели
+                </span>
+              </div>
+
+              <div class="flex items-center sm:gap-[20px] gap-[10px]">
+                <div
+                  class="w-[40px] h-[40px] rounded-lg border border-white/10 bg-[#161423] shadow-[2px_4px_4px_2px_rgba(0,0,0,0.30)]"
+                ></div>
+
+                <span
+                  class="text-white font-greycliff sm:text-[22px] text-[15px]"
+                >
+                  Другие SEO
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full sm:block hidden">
+            <p
+              class="font-greycliff text-[#C6C3D9] sm:text-[22px] text-[15px] text-center"
+            >
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века.m Lorem Ipsum - это текст-"рыба",
+              часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+              стандартной "рыбой" для текстов на латинице с начала XVI века.m
+            </p>
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div
+          class="max-w-[1784px] w-full mx-auto flex items-center justify-center flex-wrap md:gap-[40px] gap-[20px]"
+        >
+          <!-- card 1 -->
+          <div
+            class="max-w-[568px] w-full sm:p-[40px] p-[20px] rounded-lg bg-white/5 backdrop-blur-[250px] bg-gradient-to-bl from-[rgba(241,111,24,0.50)] to-[rgba(241,111,24,0.00)]"
+          >
+            <h3
+              class="text-white font-vela md:text-[28px] sm:text-[20px] text-[18px] sm:mb-[20px] mb-3"
+            >
+              Критерий сравнения
+            </h3>
+
+            <!-- Progress bar 1 -->
+            <div
+              class="w-full bg-black/30 rounded-full md:h-[36px] h-[30px] relative sm:mb-[20px] mb-3"
+            >
+              <div
+                class="absolute left-0 top-0 h-full rounded-[43px] bg-gradient-to-br from-[#E26009] to-[#FF8831] shadow-[0px_0px_40px_0px_rgba(253,136,6,0.20)] w-[75%] flex items-center justify-center text-white text-sm font-semibold"
+              >
+                75%
+              </div>
+            </div>
+
+            <!-- Progress bar 2 -->
+            <div
+              class="w-full bg-black/30 rounded-full md:h-[36px] h-[28px] relative"
+            >
+              <div
+                class="absolute left-0 top-0 h-full bg-black rounded-full w-[35%] flex items-center justify-center text-white text-sm font-semibold"
+              >
+                35%
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="max-w-[568px] w-full sm:p-[40px] p-[20px] rounded-lg bg-white/5 backdrop-blur-[250px] bg-gradient-to-bl from-[rgba(241,111,24,0.50)] to-[rgba(241,111,24,0.00)]"
+          >
+            <h3
+              class="text-white font-vela md:text-[28px] sm:text-[20px] text-[18px] sm:mb-[20px] mb-3"
+            >
+              Критерий сравнения
+            </h3>
+
+            <!-- Progress bar 1 -->
+            <div
+              class="w-full bg-black/30 rounded-full md:h-[36px] h-[30px] relative sm:mb-[20px] mb-3"
+            >
+              <div
+                class="absolute left-0 top-0 h-full rounded-[43px] bg-gradient-to-br from-[#E26009] to-[#FF8831] shadow-[0px_0px_40px_0px_rgba(253,136,6,0.20)] w-[75%] flex items-center justify-center text-white text-sm font-semibold"
+              >
+                75%
+              </div>
+            </div>
+
+            <!-- Progress bar 2 -->
+            <div
+              class="w-full bg-black/30 rounded-full md:h-[36px] h-[28px] relative"
+            >
+              <div
+                class="absolute left-0 top-0 h-full bg-black rounded-full w-[35%] flex items-center justify-center text-white text-sm font-semibold"
+              >
+                35%
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="max-w-[568px] w-full sm:p-[40px] p-[20px] rounded-lg bg-white/5 backdrop-blur-[250px] bg-gradient-to-bl from-[rgba(241,111,24,0.50)] to-[rgba(241,111,24,0.00)]"
+          >
+            <h3
+              class="text-white font-vela md:text-[28px] sm:text-[20px] text-[18px] sm:mb-[20px] mb-3"
+            >
+              Критерий сравнения
+            </h3>
+
+            <!-- Progress bar 1 -->
+            <div
+              class="w-full bg-black/30 rounded-full md:h-[36px] h-[30px] relative sm:mb-[20px] mb-3"
+            >
+              <div
+                class="absolute left-0 top-0 h-full rounded-[43px] bg-gradient-to-br from-[#E26009] to-[#FF8831] shadow-[0px_0px_40px_0px_rgba(253,136,6,0.20)] w-[75%] flex items-center justify-center text-white text-sm font-semibold"
+              >
+                75%
+              </div>
+            </div>
+
+            <!-- Progress bar 2 -->
+            <div
+              class="w-full bg-black/30 rounded-full md:h-[36px] h-[28px] relative"
+            >
+              <div
+                class="absolute left-0 top-0 h-full bg-black rounded-full w-[35%] flex items-center justify-center text-white text-sm font-semibold"
+              >
+                35%
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

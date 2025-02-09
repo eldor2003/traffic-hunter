@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                  animation: {
+                    'pulse-glow-light': 'pulse-glow-light 3s ease infinite',
+                  },
+                  keyframes: {
+                    // 'pulse-glow-light': {
+                    //   '0%, 100%': {
+                    //     opacity: '1',
+                    //   },
+                    //   '50%': {
+                    //     opacity: '.5',
+                    //   },
+                    // },
+                  },
+                  fontFamily: {
+                    gilroy: ['Gilroy'],
+                    vela: ['Vela Sans GX'],
+                    greycliff: ['Greycliff CF']
+                  },
+                  colors: {
+                    gradientStart: '#FD8806',
+                    gradientEnd: '#DB3F2C',
+                  },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                        'custom-gradient': 'linear-gradient(257deg, #FD8806 25.37%, #DB3F2C 125.31%)',
+                    },
+                },
+                // plugins: [
+                //     require('@tailwindcss/forms'),
+                //     require('@tailwindcss/typography'),
+                // ],
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="./fonts/font.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-[#161423]">
+    <div class="wrapper">
+      <section class="private_marketer py-[40px] mb-[80px]">
+        <div class="max-w-[93vw] mx-auto">
+          <div class="flex gap-[40px]">
+            <div>
+              <div class="relative w-[718px] h-[692px] bg-[url('./img/private-marketer.svg')] bg-lightgray bg-center bg-cover bg-no-repeat mix-blend-plus-lighter">
+                <img class="absolute top-[10px] left-1/2 transform -translate-x-1/2"  src="./img/crown-vektor.svg" alt="crown">
+                <img class="absolute top-[227px] left-[122px]"  src="./img/left-shoulder-vektor.svg" alt="left-vektor">
+                <img class="absolute top-[319px] right-[136px]"  src="./img/right-shoulder-vektor.svg" alt="crown">
+                <img class="absolute bottom-[169px] left-[50px]"  src="./img/left-back-vektor.svg" alt="crown">
+              </div>
+              <div class="relative -left-[3.5vw]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="787" height="80" viewBox="0 0 787 80" fill="none">
+                  <path d="M787 1H248L169.5 79.5H0" stroke="white" stroke-opacity="0.4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="max-w-[1024px] w-full">
+              <h2 class="text-white font-gilroy text-[52px] font-semibold leading-normal mb-[30px]">
+                Частный таргетолог
+                <br>
+                с <span class="relative">
+                  12 
+                  <svg class="absolute -left-[20px] -top-[10px]" xmlns="http://www.w3.org/2000/svg" width="97" height="87" viewBox="0 0 97 87" fill="none">
+                    <path opacity="0.2" d="M46.9052 11.1979C34.8171 10.7738 18.6768 9.01243 9.21928 18.4157C2.32903 25.2665 0.658235 36.2786 2.99153 45.3387C7.01052 60.9444 19.8606 72.1603 34.1942 78.5215C48.2538 84.7611 67.7045 88.4547 81.5889 79.5115C93.2385 72.0078 96.2717 56.6348 93.9806 43.8377C91.4935 29.946 82.6205 19.283 71.4329 11.4215C64.7054 6.69402 58.2787 4.9398 50.9292 2" stroke="#FD8806" stroke-width="3" stroke-linecap="round"/>
+                  </svg>
+                </span> 
+                годами опыта
+              </h2>
+              <div class="flex divide-x divide-white/40 mb-[30px]">
+                <div class="w-1/4 text-center py-[39.5px]">
+                  <div class="stat-gradient font-gilroy text-7xl font-extrabold">850</div>
+                  <div class="text-[#CDD3DA] font-Gilroy text-xl font-medium">конверсий</div>
+                </div>
+                <div class="w-1/4 text-center py-[39.5px]">
+                  <div class="stat-gradient font-gilroy text-7xl font-extrabold">250k</div>
+                  <div class="text-[#CDD3DA] font-Gilroy text-xl font-medium">кликов</div>
+                </div>
+                <div class="w-1/4 text-center py-[39.5px]">
+                  <div class="stat-gradient font-gilroy text-7xl font-extrabold">100%</div>
+                  <div class="text-[#CDD3DA] font-Gilroy text-xl font-medium">ROI</div>
+                </div>
+                <div class="w-1/4 text-center py-[39.5px]">
+                  <div class="stat-gradient font-gilroy text-7xl font-extrabold">1 млн</div>
+                  <div class="text-[#CDD3DA] font-Gilroy text-xl font-medium">охватов</div>
+                </div>
+              </div>
+              <div class="max-w-[833px] mb-[30px] text-[#CDD3DA] font-gilroy text-[24px] font-normal leading-[42px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+              <div class="max-w-[833px] mb-[30px] text-[#CDD3DA] font-gilroy text-[24px] font-normal leading-[42px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="niches_experience py-[40px] mb-[80px]">
+        <div class="max-w-[93vw] mx-auto">
+          <div class="max-w-[833px] mb-[70px] mx-auto">
+            <h3 class="text-white text-center font-gilroy text-[52px] font-semibold mb-[26px]">Опыт работы в нишах</h3>
+            <p class="text-[#CDD3DA] text-center font-gilroy text-[24px] font-normal leading-[140%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+          </div>
+          <div class="rounded-[18px] bg-[#141221] shadow-[inset_0px_0px_50px_10px_rgba(12,10,25,0.75)] p-[50px] flex flex-col gap-[60px] mb-[20px]">
+            <div class="flex justify-center gap-[100px]">
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">финансы</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">фаст-фуд</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">события</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">цветы</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">салоны красоты</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">юриспруденция</div>
+            </div>
+            <div class="flex justify-center gap-[100px]">
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">йога</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">автосервисы</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">стоматология</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">франшизы</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">инфобизнес</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">EDU(образование)</div>
+            </div>
+            <div class="flex justify-center gap-[100px]">
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">постеры</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">контрактное производство</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">трикотажное прозводство</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">брендовая одежда</div>
+            </div>
+            <div class="flex justify-center gap-[100px]">
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">агенства недвижимости</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">гардеробные системы</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">мебель</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">продажа авто</div>
+              <div class="bg-[#1B1928] rounded-[5px] px-[20px] py-[10px]  text-center text-[#FFF] font-greycliff text-[24px] font-normal leading-[140%]">юриспруденция</div>
+            </div>
+          </div>
+          <div class="relative inline-flex left-1/2 -translate-x-1/2 items-center">
+            <div class="show-more-gradient font-vela text-[24px] text-center font-bold leading-normal show-more-shadow">Показать все</div>
+            <img class="absolute top-[0px] left-[17px] transform" src="./img/sow-more-arrow1.svg" alt="arrow">
+          </div>
+        </div>
+      </section>
+      <section class="py-[40px]"></section>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

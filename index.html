@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+      integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./fonts/font.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              "pulse-glow-light": "pulse-glow-light 3s ease infinite",
+            },
+            keyframes: {
+              // 'pulse-glow-light': {
+              //   '0%, 100%': {
+              //     opacity: '1',
+              //   },
+              //   '50%': {
+              //     opacity: '.5',
+              //   },
+              // },
+            },
+            fontFamily: {
+              gilroy: ["Gilroy"],
+              vela: ["Vela Sans GX"],
+              greycliff: ["Greycliff CF"],
+            },
+            colors: {
+              gradientStart: "#FD8806",
+              gradientEnd: "#DB3F2C",
+            },
+            backgroundImage: {
+              "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+              "custom-gradient":
+                "linear-gradient(257deg, #FD8806 25.37%, #DB3F2C 125.31%)",
+            },
+          },
+          // plugins: [
+          //     require('@tailwindcss/forms'),
+          //     require('@tailwindcss/typography'),
+          // ],
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body class="bg-[#161423]">
+    <div class="wrapper">
+      <section class="tasks_section py-[40px]">
+        <div class="max-w-[93vw] mx-auto">
+          <div
+            class="flex items-center justify-between max-[1800px]:flex-col max-[1800px]:gap-[30px]"
+          >
+            <h3
+              class="text-[#FFF] text-[52px] font-bold font-vela not-italic leading-[58px] max-[768px]:text-[25px]"
+            >
+              Задачи
+            </h3>
+            <div
+              class="flex flex-wrap max-w-[1480px] p-[40px] gap-y-[10px] gap-[20px] items-center content-center rounded-[10px] bg-[#141221] shadow-[inset_0px_0px_20px_5px_rgba(12,10,25,0.5)] max-[1800px]:max-w-[100%] max-[768px]:bg-transparent max-[768px]:shadow-[none] max-[768px]:p-[0] max-[768px]:gap-y-[20px]"
+            >
+              <div
+                class="flex gap-[20px] p-[20px] items-center max-[768px]:items-start max-[768px]:p-[0]"
+              >
+                <div
+                  class="flex p-[8px] rounded-[5px] bg-gradient-to-br from-[#E26009] to-[#FF8831] shadow-[0px_0px_50px_0px_rgba(253,136,6,0.5)] max-[768px]:p-[6px]"
+                >
+                  <!-- <img class="w-[20px] h-[20px] flex-shrink-0 inline-block" src="./img/check.svg" alt="check"> -->
+                  <svg
+                    class="max-[768px]:w-[18px] max-[768px]:h-[18px]"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Frame">
+                      <path
+                        id="Vector"
+                        d="M3.75 10.625L8.75 15.625L16.25 4.375"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div
+                  class="text-white font-greycliff text-[24px] font-normal leading-[140%] max-[768px]:text-[18px]"
+                >
+                  Увеличить количество заявок на сайте
+                </div>
+              </div>
+              <div
+                class="flex gap-[20px] p-[20px] items-center max-[768px]:items-start max-[768px]:p-[0]"
+              >
+                <div
+                  class="flex p-[8px] rounded-[5px] bg-gradient-to-br from-[#E26009] to-[#FF8831] shadow-[0px_0px_50px_0px_rgba(253,136,6,0.5)] max-[768px]:p-[6px]"
+                >
+                  <!-- <img class="w-[20px] h-[20px] flex-shrink-0 inline-block" src="./img/check.svg" alt="check"> -->
+                  <svg
+                    class="max-[768px]:w-[18px] max-[768px]:h-[18px]"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Frame">
+                      <path
+                        id="Vector"
+                        d="M3.75 10.625L8.75 15.625L16.25 4.375"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div
+                  class="text-white font-greycliff text-[24px] font-normal leading-[140%] max-[768px]:text-[18px]"
+                >
+                  Провести аудит сайта и предоставить отчет с рекомендациями
+                </div>
+              </div>
+              <div
+                class="flex gap-[20px] p-[20px] items-center max-[768px]:items-start max-[768px]:p-[0]"
+              >
+                <div
+                  class="flex p-[8px] rounded-[5px] bg-gradient-to-br from-[#E26009] to-[#FF8831] shadow-[0px_0px_50px_0px_rgba(253,136,6,0.5)] max-[768px]:p-[6px]"
+                >
+                  <!-- <img class="w-[20px] h-[20px] flex-shrink-0 inline-block" src="./img/check.svg" alt="check"> -->
+                  <svg
+                    class="max-[768px]:w-[18px] max-[768px]:h-[18px]"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Frame">
+                      <path
+                        id="Vector"
+                        d="M3.75 10.625L8.75 15.625L16.25 4.375"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div
+                  class="text-white font-greycliff text-[24px] font-normal leading-[140%] max-[768px]:text-[18px]"
+                >
+                  Разработать и внедрить SEO-стратегию
+                </div>
+              </div>
+              <div
+                class="flex gap-[20px] p-[20px] items-center max-[768px]:items-start max-[768px]:p-[0]"
+              >
+                <div
+                  class="flex p-[8px] rounded-[5px] bg-gradient-to-br from-[#E26009] to-[#FF8831] shadow-[0px_0px_50px_0px_rgba(253,136,6,0.5)] max-[768px]:p-[6px]"
+                >
+                  <!-- <img class="w-[20px] h-[20px] flex-shrink-0 inline-block" src="./img/check.svg" alt="check"> -->
+                  <svg
+                    class="max-[768px]:w-[18px] max-[768px]:h-[18px]"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Frame">
+                      <path
+                        id="Vector"
+                        d="M3.75 10.625L8.75 15.625L16.25 4.375"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div
+                  class="text-white font-greycliff text-[24px] font-normal leading-[140%] max-[768px]:text-[18px]"
+                >
+                  Создать контент-план
+                </div>
+              </div>
+              <div
+                class="flex gap-[20px] p-[20px] items-center max-[768px]:items-start max-[768px]:p-[0]"
+              >
+                <div
+                  class="flex p-[8px] rounded-[5px] bg-gradient-to-br from-[#E26009] to-[#FF8831] shadow-[0px_0px_50px_0px_rgba(253,136,6,0.5)] max-[768px]:p-[6px]"
+                >
+                  <!-- <img class="w-[20px] h-[20px] flex-shrink-0 inline-block" src="./img/check.svg" alt="check"> -->
+                  <svg
+                    class="max-[768px]:w-[18px] max-[768px]:h-[18px]"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Frame">
+                      <path
+                        id="Vector"
+                        d="M3.75 10.625L8.75 15.625L16.25 4.375"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div
+                  class="text-white font-greycliff text-[24px] font-normal leading-[140%] max-[768px]:text-[18px]"
+                >
+                  Настроить мониторинг KPI
+                </div>
+              </div>
+              <div
+                class="flex gap-[20px] p-[20px] items-center max-[768px]:items-start max-[768px]:p-[0]"
+              >
+                <div
+                  class="flex p-[8px] rounded-[5px] bg-gradient-to-br from-[#E26009] to-[#FF8831] shadow-[0px_0px_50px_0px_rgba(253,136,6,0.5)] max-[768px]:p-[6px]"
+                >
+                  <!-- <img class="w-[20px] h-[20px] flex-shrink-0 inline-block" src="./img/check.svg" alt="check"> -->
+                  <svg
+                    class="max-[768px]:w-[18px] max-[768px]:h-[18px]"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Frame">
+                      <path
+                        id="Vector"
+                        d="M3.75 10.625L8.75 15.625L16.25 4.375"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div
+                  class="text-white font-greycliff text-[24px] font-normal leading-[140%] max-[768px]:text-[18px]"
+                >
+                  Настроить и оптимизировать рекламные кампании в Google Ads
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my_results_section">
+        <div class="max-w-[93vw] mx-auto">
+          <h2
+            class="text-center text-[#fff] text-[52px] font-bold leading-[58px] mb-[70px] max-[576px]:mb-[30px] max-[576px]:text-[25px] font-vela"
+          >
+            Результаты моей работы
+          </h2>
+          <div
+            class="grid grid-cols-4 grid-rows-3 gap-[40px] mb-[160px] max-[1200px]:gap-[20px] max-[993px]:grid-cols-2 max-[993px]:grid-rows-5 max-[576px]:grid-cols-1 max-[576px]:grid-rows-11"
+          >
+            <div class="result_card relative max-[993px]:col-span-1">
+              <div
+                class="result_card_circle absolute z-0 top-[24px] right-[16px] max-[1200px]:right-[35px]"
+              >
+                <svg
+                  class="animate-pulse-glow-light"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="98"
+                  height="98"
+                  viewBox="0 0 98 98"
+                  fill="none"
+                >
+                  <circle cx="49" cy="49" r="49" fill="#F16F18" />
+                </svg>
+              </div>
+              <div
+                class="h-full relative z-2 result_card_body p-[30px] max-[1200px]:py-[20px] max-[1200px]:px-[30px] rounded-[10px] bg-[radial-gradient(50%_100%_at_50%_0%,_rgba(255,_255,_255,_0.05)_0%,_rgba(255,_255,_255,_0.03)_100%)] backdrop-blur-[150px] flex flex-col gap-[30px]"
+              >
+                <div class="flex justify-between">
+                  <div
+                    class="text-[#FFF] text-[28px] font-bold max-[1200px]:text-[22px]"
+                  >
+                    Клики
+                  </div>
+                  <div
+                    class="absolute -top-[15px] -right-[20px] max-[1200px]:scale-[.85]"
+                  >
+                    <img src="./img/cursor.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="text-[70px] max-[1546px]:text-[60px] font-extrabold text-gradient text-transparent font-gilroy max-[1400px]:text-[40px] max-[993px]:text-[50px]"
+                >
+                  4 500
+                </div>
+              </div>
+            </div>
+            <div class="result_card relative row-span-2 max-[993px]:col-span-1">
+              <div
+                class="result_card_circle absolute z-0 bottom-[46px] right-[152px] translate-x-1/2 transform"
+              >
+                <svg
+                  class="animate-pulse-glow-light"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="98"
+                  height="98"
+                  viewBox="0 0 98 98"
+                  fill="none"
+                >
+                  <circle cx="49" cy="49" r="49" fill="#F16F18" />
+                </svg>
+              </div>
+              <div
+                class="h-full relative z-2 result_card_body p-[30px] max-[1200px]:py-[20px] max-[1200px]:px-[30px] rounded-[10px] bg-[radial-gradient(50%_100%_at_50%_0%,_rgba(255,_255,_255,_0.05)_0%,_rgba(255,_255,_255,_0.03)_100%)] backdrop-blur-[150px] flex flex-col gap-[30px]"
+              >
+                <div class="flex justify-between">
+                  <div
+                    class="text-[#FFF] text-[28px] font-bold max-[1200px]:text-[22px]"
+                  >
+                    Охваты
+                  </div>
+                  <div
+                    class="absolute -top-[15px] -right-[20px] max-[1200px]:scale-[.85]"
+                  >
+                    <img src="./img/chart_icon.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  id="result_chart1"
+                  class="absolute top-[70px] right-1/2 translate-x-1/2 transform w-[568px] max-[1546px]:max-w-[350px] max-[1546px]:w-100 max-[993px]:max-w-[420px] max-[1200px]:top-[50px]"
+                ></div>
+              </div>
+            </div>
+            <div class="result_card relative max-[993px]:col-span-1">
+              <div
+                class="result_card_circle absolute z-0 bottom-[28px] left-[76px] max-[1200px]:bottom-[unset] max-[1200px]:left-[unset] max-[1200px]:top-[33px] max-[1200px]:right-[55px]"
+              >
+                <svg
+                  class="animate-pulse-glow-light"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="98"
+                  height="98"
+                  viewBox="0 0 98 98"
+                  fill="none"
+                >
+                  <circle cx="49" cy="49" r="49" fill="#F16F18" />
+                </svg>
+              </div>
+              <div
+                class="h-full relative z-2 result_card_body p-[30px] max-[1200px]:py-[20px] max-[1200px]:px-[30px] rounded-[10px] bg-[radial-gradient(50%_100%_at_50%_0%,_rgba(255,_255,_255,_0.05)_0%,_rgba(255,_255,_255,_0.03)_100%)] backdrop-blur-[150px] flex flex-col gap-[30px]"
+              >
+                <div class="flex justify-between">
+                  <div
+                    class="text-[#FFF] text-[28px] font-bold max-[1200px]:text-[22px]"
+                  >
+                    CPA
+                  </div>
+                  <div
+                    class="absolute -top-[15px] -right-[20px] max-[1200px]:scale-[.85]"
+                  >
+                    <img src="./img/cpa.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="text-[70px] max-[1546px]:text-[60px] font-extrabold text-gradient text-transparent font-gilroy max-[1400px]:text-[40px] max-[993px]:text-[50px]"
+                >
+                  4 500
+                </div>
+              </div>
+            </div>
+            <div class="result_card relative max-[993px]:col-span-1">
+              <div
+                class="result_card_circle absolute z-0 bottom-[38px] left-[63px] ax-[1200px]:bottom-[unset] max-[1200px]:left-[unset] max-[1200px]:top-[25px] max-[1200px]:right-[75px]"
+              >
+                <svg
+                  class="animate-pulse-glow-light"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="98"
+                  height="98"
+                  viewBox="0 0 98 98"
+                  fill="none"
+                >
+                  <circle cx="49" cy="49" r="49" fill="#F16F18" />
+                </svg>
+              </div>
+              <div
+                class="h-full relative z-2 result_card_body p-[30px] max-[1200px]:py-[20px] max-[1200px]:px-[30px] rounded-[10px] bg-[radial-gradient(50%_100%_at_50%_0%,_rgba(255,_255,_255,_0.05)_0%,_rgba(255,_255,_255,_0.03)_100%)] backdrop-blur-[150px] flex flex-col gap-[30px]"
+              >
+                <div class="flex justify-between">
+                  <div
+                    class="text-[#FFF] text-[28px] font-bold max-[1200px]:text-[22px]"
+                  >
+                    Конверсии
+                  </div>
+                  <div
+                    class="absolute -top-[15px] -right-[20px] max-[1200px]:scale-[.85]"
+                  >
+                    <img src="./img/filter.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="text-[70px] max-[1546px]:text-[60px] font-extrabold text-gradient text-transparent font-gilroy max-[1400px]:text-[40px] max-[993px]:text-[50px]"
+                >
+                  220
+                </div>
+              </div>
+            </div>
+            <div class="result_card relative max-[993px]:col-span-1">
+              <div
+                class="result_card_circle absolute z-0 bottom-[18px] left-[111px]"
+              >
+                <svg
+                  class="animate-pulse-glow-light"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="98"
+                  height="98"
+                  viewBox="0 0 98 98"
+                  fill="none"
+                >
+                  <circle cx="49" cy="49" r="49" fill="#F16F18" />
+                </svg>
+              </div>
+              <div
+                class="h-full relative z-2 result_card_body p-[30px] max-[1200px]:py-[20px] max-[1200px]:px-[30px] rounded-[10px] bg-[radial-gradient(50%_100%_at_50%_0%,_rgba(255,_255,_255,_0.05)_0%,_rgba(255,_255,_255,_0.03)_100%)] backdrop-blur-[150px] flex flex-col gap-[30px]"
+              >
+                <div class="flex justify-between">
+                  <div
+                    class="text-[#FFF] text-[28px] font-bold max-[1200px]:text-[22px]"
+                  >
+                    Показы
+                  </div>
+                  <div
+                    class="absolute -top-[15px] -right-[20px] max-[1200px]:scale-[.85]"
+                  >
+                    <img src="./img/show_eye.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="text-[70px] max-[1546px]:text-[60px] font-extrabold text-gradient text-transparent font-gilroy max-[1400px]:text-[40px] max-[993px]:text-[50px]"
+                >
+                  440 500
+                </div>
+              </div>
+            </div>
+            <div
+              class="result_card relative max-[993px]:row-span-2 max-[993px]:col-span-1 max-[576px]:row-span-1"
+            >
+              <div
+                class="result_card_circle absolute z-0 top-[14px] right-[32px] ax-[1200px]:bottom-[unset] max-[1200px]:left-[unset] max-[1200px]:top-[33px] max-[1200px]:right-[55px]"
+              >
+                <svg
+                  class="animate-pulse-glow-light"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="98"
+                  height="98"
+                  viewBox="0 0 98 98"
+                  fill="none"
+                >
+                  <circle cx="49" cy="49" r="49" fill="#F16F18" />
+                </svg>
+              </div>
+              <div
+                class="h-full relative z-2 result_card_body p-[30px] max-[1200px]:py-[20px] max-[1200px]:px-[30px] rounded-[10px] bg-[radial-gradient(50%_100%_at_50%_0%,_rgba(255,_255,_255,_0.05)_0%,_rgba(255,_255,_255,_0.03)_100%)] backdrop-blur-[150px] flex flex-col gap-[30px]"
+              >
+                <div class="flex justify-between">
+                  <div
+                    class="text-[#FFF] text-[28px] font-bold max-[1200px]:text-[22px]"
+                  >
+                    CPC
+                  </div>
+                  <div
+                    class="absolute -top-[15px] -right-[20px] max-[1200px]:scale-[.85]"
+                  >
+                    <img src="./img/gallery.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="text-[70px] max-[1546px]:text-[60px] font-extrabold text-gradient text-transparent font-gilroy max-[1400px]:text-[40px] max-[993px]:text-[50px]"
+                >
+                  700 ₽
+                </div>
+              </div>
+            </div>
+            <div class="result_card relative row-span-2 max-[993px]:col-span-1">
+              <div
+                class="result_card_circle absolute z-0 bottom-[74px] right-[98px] max-[1200px]:bottom-[65px] max-[1200px]:right-[105px]"
+              >
+                <svg
+                  class="animate-pulse-glow-light"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="98"
+                  height="98"
+                  viewBox="0 0 98 98"
+                  fill="none"
+                >
+                  <circle cx="49" cy="49" r="49" fill="#F16F18" />
+                </svg>
+              </div>
+              <div
+                class="h-full relative z-2 result_card_body p-[30px] max-[1200px]:py-[20px] max-[1200px]:px-[30px] rounded-[10px] bg-[radial-gradient(50%_100%_at_50%_0%,_rgba(255,_255,_255,_0.05)_0%,_rgba(255,_255,_255,_0.03)_100%)] backdrop-blur-[150px] flex flex-col gap-[30px]"
+              >
+                <div class="flex justify-between">
+                  <div
+                    class="text-[#FFF] text-[28px] font-bold max-[1200px]:text-[22px]"
+                  >
+                    CTR%
+                  </div>
+                  <div
+                    class="absolute -top-[15px] -right-[20px] max-[1200px]:scale-[.85]"
+                  >
+                    <img src="./img/chart_icon.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  id="result_chart2"
+                  class="absolute top-[70px] right-1/2 translate-x-1/2 transform w-[568px] max-[1546px]:max-w-[350px] max-[993px]:max-w-[420px] max-[1546px]:w-100 max-[1200px]:top-[50px]"
+                ></div>
+              </div>
+            </div>
+            <div
+              class="col-span-3 max-[993px]:row-span-2 max-[993px]:col-span-2 max-[576px]:col-span-1"
+            >
+              <div
+                class="grid grid-cols-7 max-[993px]:grid-cols-6 grid-rows-1 gap-[40px] max-[1200px]:gap-[20px] max-[576px]:grid-rows-2 max-[576px]:grid-cols-1"
+              >
+                <div
+                  class="result_card relative col-span-3 max-[576px]:col-span-1"
+                >
+                  <div
+                    class="result_card_circle absolute z-0 top-[46px] right-[52px]"
+                  >
+                    <svg
+                      class="animate-pulse-glow-light"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="98"
+                      height="98"
+                      viewBox="0 0 98 98"
+                      fill="none"
+                    >
+                      <circle cx="49" cy="49" r="49" fill="#F16F18" />
+                    </svg>
+                  </div>
+                  <div
+                    class="h-full relative z-2 result_card_body p-[30px] max-[1200px]:py-[20px] max-[1200px]:px-[30px] rounded-[10px] bg-[radial-gradient(50%_100%_at_50%_0%,_rgba(255,_255,_255,_0.05)_0%,_rgba(255,_255,_255,_0.03)_100%)] backdrop-blur-[150px] flex flex-col gap-[30px]"
+                  >
+                    <div class="flex justify-between">
+                      <div
+                        class="text-[#FFF] text-[28px] font-bold max-[1200px]:text-[22px]"
+                      >
+                        ROI
+                      </div>
+                      <div
+                        class="absolute -top-[15px] -right-[20px] max-[1200px]:scale-[.85]"
+                      >
+                        <img src="./img/fire.svg" alt="" />
+                      </div>
+                    </div>
+                    <div
+                      class="text-[70px] max-[1546px]:text-[60px] font-extrabold text-gradient text-transparent font-gilroy max-[1400px]:text-[40px] max-[993px]:text-[50px]"
+                    >
+                      4 500
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="result_card relative col-span-4 max-[993px]:col-span-3 max-[576px]:col-span-1"
+                >
+                  <div
+                    class="result_card_circle absolute z-0 top-[76px] left-[70px] max-[1400px]:top-[50px] max-[993px]:top-[76px]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="98"
+                      height="98"
+                      viewBox="0 0 98 98"
+                      fill="none"
+                    >
+                      <circle cx="49" cy="49" r="49" fill="#F16F18" />
+                    </svg>
+                  </div>
+                  <div
+                    class="h-full relative z-2 result_card_body p-[30px] max-[1200px]:py-[20px] max-[1200px]:px-[30px] rounded-[10px] bg-[radial-gradient(50%_100%_at_50%_0%,_rgba(255,_255,_255,_0.05)_0%,_rgba(255,_255,_255,_0.03)_100%)] backdrop-blur-[150px] flex flex-col gap-[30px]"
+                  >
+                    <div class="flex justify-between">
+                      <div
+                        class="text-[#FFF] text-[28px] font-bold max-[1200px]:text-[22px]"
+                      >
+                        Бюджет
+                      </div>
+                      <div
+                        class="absolute -top-[15px] -right-[20px] max-[1200px]:scale-[.85]"
+                      >
+                        <img src="./img/money.svg" alt="" />
+                      </div>
+                    </div>
+                    <div
+                      class="text-[70px] max-[1546px]:text-[60px] font-extrabold text-gradient text-transparent font-gilroy max-[1400px]:text-[40px] max-[993px]:text-[50px]"
+                    >
+                      1 500 ₽
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="promotion_evidence">
+        <div class="max-w-[93vw] mx-auto">
+          <h2
+            class="text-white text-center text-[52px] font-bold leading-[58px] max-[768px]:text-[25px] max-[768px]:leading-[35px]"
+          >
+            Доказательства продвижения
+          </h2>
+        </div>
+        <!-- Swiper -->
+        <div
+          class="swiper promotionSwiper w-full h-[600px] flex items-center justify-center max-[768px]:h-[395px] max-[576px]:h-[300px]"
+        >
+          <div class="swiper-wrapper flex items-center">
+            <div
+              class="swiper-slide relative flex-shrink-0 rounded-lg overflow-hidden bg-lightgray flex items-center justify-center transition-[transform,opacity] duration-300 ease overflow-visible"
+            >
+              <img
+                class="w-full h-auto rounded-[10px] object-cover transition-[transform,opacity] duration-500 ease pointer-events-none"
+                src="./img/promotion.png"
+                alt="Slide 1"
+              />
+              <a
+                href="#"
+                class="view-btn absolute left-1/2 transform -translate-x-1/2 rounded-t-[10px] bg-[#161423] bottom-[54px] z-10 h-auto py-[11px] px-[30px] max-[1600px]:bottom-[84px] max-[1440px]:bottom-[110px] max-[1200px]:bottom-[130px] max-[1024px]:bottom-[160px] max-[768px]:bottom-[54px] max-[576px]:py-[8px] max-[576px]:px-[16px] max-[576px]:bottom-[50px]"
+              >
+                <span class="text-[24px] max-[576px]:text-[16px]"
+                  >Посмотреть</span
+                >
+              </a>
+            </div>
+            <div
+              class="swiper-slide relative flex-shrink-0 rounded-lg overflow-hidden bg-lightgray flex items-center justify-center transition-[transform,opacity] duration-300 ease overflow-visible"
+            >
+              <img
+                class="w-full h-auto rounded-[10px] object-cover transition-[transform,opacity] duration-500 ease pointer-events-none"
+                src="./img/promotion.png"
+                alt="Slide 1"
+              />
+              <a
+                href="#"
+                class="view-btn absolute left-1/2 transform -translate-x-1/2 rounded-t-[10px] bg-[#161423] bottom-[54px] z-10 h-auto py-[11px] px-[30px] max-[1600px]:bottom-[84px] max-[1440px]:bottom-[110px] max-[1200px]:bottom-[130px] max-[1024px]:bottom-[160px] max-[768px]:bottom-[54px] max-[576px]:py-[8px] max-[576px]:px-[16px] max-[576px]:bottom-[50px]"
+              >
+                <span class="text-[24px] max-[576px]:text-[16px]"
+                  >Посмотреть</span
+                >
+              </a>
+            </div>
+            <div
+              class="swiper-slide relative flex-shrink-0 rounded-lg overflow-hidden bg-lightgray flex items-center justify-center transition-[transform,opacity] duration-300 ease overflow-visible"
+            >
+              <img
+                class="w-full h-auto rounded-[10px] object-cover transition-[transform,opacity] duration-500 ease pointer-events-none"
+                src="./img/promotion.png"
+                alt="Slide 1"
+              />
+              <a
+                href="#"
+                class="view-btn absolute left-1/2 transform -translate-x-1/2 rounded-t-[10px] bg-[#161423] bottom-[54px] z-10 h-auto py-[11px] px-[30px] max-[1600px]:bottom-[84px] max-[1440px]:bottom-[110px] max-[1200px]:bottom-[130px] max-[1024px]:bottom-[160px] max-[768px]:bottom-[54px] max-[576px]:py-[8px] max-[576px]:px-[16px] max-[576px]:bottom-[50px]"
+              >
+                <span class="text-[24px] max-[576px]:text-[16px]"
+                  >Посмотреть</span
+                >
+              </a>
+            </div>
+            <div
+              class="swiper-slide relative flex-shrink-0 rounded-lg overflow-hidden bg-lightgray flex items-center justify-center transition-[transform,opacity] duration-300 ease overflow-visible"
+            >
+              <img
+                class="w-full h-auto rounded-[10px] object-cover transition-[transform,opacity] duration-500 ease pointer-events-none"
+                src="./img/promotion.png"
+                alt="Slide 1"
+              />
+              <a
+                href="#"
+                class="view-btn absolute left-1/2 transform -translate-x-1/2 rounded-t-[10px] bg-[#161423] bottom-[54px] z-10 h-auto py-[11px] px-[30px] max-[1600px]:bottom-[84px] max-[1440px]:bottom-[110px] max-[1200px]:bottom-[130px] max-[1024px]:bottom-[160px] max-[768px]:bottom-[54px] max-[576px]:py-[8px] max-[576px]:px-[16px] max-[576px]:bottom-[50px]"
+              >
+                <span class="text-[24px] max-[576px]:text-[16px]"
+                  >Посмотреть</span
+                >
+              </a>
+            </div>
+            <div
+              class="swiper-slide relative flex-shrink-0 rounded-lg overflow-hidden bg-lightgray flex items-center justify-center transition-[transform,opacity] duration-300 ease overflow-visible"
+            >
+              <img
+                class="w-full h-auto rounded-[10px] object-cover transition-[transform,opacity] duration-500 ease pointer-events-none"
+                src="./img/promotion.png"
+                alt="Slide 1"
+              />
+              <a
+                href="#"
+                class="view-btn absolute left-1/2 transform -translate-x-1/2 rounded-t-[10px] bg-[#161423] bottom-[54px] z-10 h-auto py-[11px] px-[30px] max-[1600px]:bottom-[84px] max-[1440px]:bottom-[110px] max-[1200px]:bottom-[130px] max-[1024px]:bottom-[160px] max-[768px]:bottom-[54px] max-[576px]:py-[8px] max-[576px]:px-[16px] max-[576px]:bottom-[50px]"
+              >
+                <span class="text-[24px] max-[576px]:text-[16px]"
+                  >Посмотреть</span
+                >
+              </a>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <!-- <div id="image-modal" class="modal fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
+      <div class="modal-content relative max-w-4xl max-h-[90vh]">
+        <img id="modal-image" class="w-full h-auto rounded-lg" src="" alt="Full View">
+        <button id="close-modal" class="absolute top-4 right-4 bg-white text-black px-4 py-2 rounded-md">
+          Yopish
+        </button>
+      </div>
+    </div> -->
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

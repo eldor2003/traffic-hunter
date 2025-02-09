@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+        integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./fonts/font.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        "pulse-glow-light": "pulse-glow-light 3s ease infinite",
+                    },
+                    keyframes: {
+                        // 'pulse-glow-light': {
+                        //   '0%, 100%': {
+                        //     opacity: '1',
+                        //   },
+                        //   '50%': {
+                        //     opacity: '.5',
+                        //   },
+                        // },
+                    },
+                    fontFamily: {
+                        gilroy: ["Gilroy"],
+                        vela: ["Vela Sans GX"],
+                        greycliff: ["Greycliff CF"],
+                    },
+                    colors: {
+                        gradientStart: "#FD8806",
+                        gradientEnd: "#DB3F2C",
+                    },
+                    backgroundImage: {
+                        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+                        "custom-gradient":
+                            "linear-gradient(257deg, #FD8806 25.37%, #DB3F2C 125.31%)",
+                    },
+                },
+                // plugins: [
+                //     require('@tailwindcss/forms'),
+                //     require('@tailwindcss/typography'),
+                // ],
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <section class="404_section pb-[64px] max-[767px]:pb-[48px]"
+            style="background-image: url('https://traffichunter.digital/wp-content/uploads/2024/04/hero-bg.jpg')">
+            <div class="max-w-[93vw] mx-auto flex justify-between gap-[95px] max-[1200px]:flex-col">
+                <div class="404_left max-w-[800px]">
+                    <div class="buttons flex gap-2 mb-[55px] max-[1200px]:mb-[25px] max-[767px]:mb-[20px]">
+                        <a href="#"
+                            class="py-[10px] max-[767px]:text-[12px] max-[767px]:px-[10px] max-[767px]:py-[6px] px-[25px] text-white font-greycliff text-[18px] font-normal leading-normal rounded-[6px] bg-[rgba(255,255,255,0.04)] shadow-[0px_0px_21.5px_0px_rgba(0,0,0,0.25)] p-4">Главная</a>
+                        <a href="#"
+                            class="py-[10px] max-[767px]:text-[12px] max-[767px]:px-[10px] max-[767px]:py-[6px] px-[25px] text-white font-greycliff text-[18px] font-normal leading-normal rounded-[6px] bg-[rgba(255,255,255,0.04)] shadow-[0px_0px_21.5px_0px_rgba(0,0,0,0.25)] p-4">Ошибка
+                            404</a>
+                    </div>
+                    <div class="title_block max-[1200px]:mb-0 relative mb-[40px]  max-[767px]:mb-[-30px]">
+                        <h1
+                            class="text-[80px] max-[767px]:text-[40px] max-[767px]:leading-[44px] text-white font-normal leading-[90px] font-greycliff bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">
+                            Упс, ошибка...</h1>
+
+                        <svg class="absolute z-10 left-[182px] max-[767px]:left-[124px] max-[767px]:max-w-[145px]"
+                            xmlns="http://www.w3.org/2000/svg" width="296" height="23" viewBox="0 0 296 23" fill="none">
+                            <path
+                                d="M2 5.91894C61.1373 2.27976 120.559 11.0027 179.617 2.68729C180.84 2.51502 184.503 1.85485 183.279 2.02899C173.603 3.40637 182.138 2.47603 167.453 4.30312C148.341 6.68093 129.306 6.93929 110.159 6.99616C89.9345 7.05624 67.8838 4.47619 48.1665 13.9981C37.4472 19.1746 51.5076 13.4102 53.4535 12.8012C68.7669 8.00831 84.0259 7.20095 99.5509 7.05601C137.779 6.69911 175.939 3.66597 214.172 3.76451C231.291 3.80863 248.405 4.29582 265.522 4.60234C273.187 4.73959 277.045 4.78318 284.459 4.60234C286.532 4.55176 288.605 4.44159 290.679 4.36296C295.148 4.19347 295.533 4.10798 289.193 4.78188C233.714 10.6786 178.241 18.3988 122.669 21"
+                                stroke="#FD9D05" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="main_img min-[1201px]:hidden max-[767px]:text-center">
+                        <img class="max-w-[480px] w-[100%] max-[767px]:max-w-[325px]" src="./img/mobile_404.png"
+                            alt="Flowers">
+                    </div>
+                    <p
+                        class="text-[#CDD3DA] max-[767px]:text-[16px] max-[767px]:leading-[22px] max-[767px]:mb-[32px] text-[24px] font-normal leading-[42px] font-greycliff mb-[40px]">
+                        Возможно она была удалена или даже никогда не существовала. Что-бы найти нужную информацию,
+                        рекомендуем воспользоваться поиском, перейти на главную страницу или в соц.сети.
+                    </p>
+                    <form
+                        class="flex justify-between items-center flex-1 max-[767px]:border-[0px]  pr-[14px] max-[767px]:pr-[0px] max-[767px]:pl-[12px] pl-[24px] rounded-[8px] border-t border-r border-[#FEFEFE] bg-[rgba(255,255,255,0.05)] mb-6 max-[767px]:mb-[20px]">
+                        <label class="flex gap-2 items-center py-7 flex-1 max-[767px]:py-[12px]">
+                            <img src="./img/search.svg" alt="">
+                            <input type="text"
+                                class="placeholder:text-[rgba(255,255,255,0.50)] max-[767px]:text-[16px] max-[767px]:placeholder:text-[16px] placeholder:text-[18px] placeholder:font-normal placeholder:leading-normal placeholder:font-vela text-[rgba(255,255,255,0.50)] flex-1 border-none outline-none bg-transparent text-[18px] font-normal leading-normal font-vela "
+                                placeholder="Введите поисковый запрос">
+                        </label>
+                        <button
+                            class="px-[20px] py-[14px] max-[767px]:p-[0px] max-[767px]:hidden max-[767px]:min-w-[47px] min-w-[137px] rounded-[4px] bg-gradient-to-bl from-[#FD8806] to-[#DB3F2C] shadow-[0px_0px_16.1px_rgba(253,136,6,0.51),_0px_4px_4px_rgba(255,255,255,0.13)_inset] text-[rgba(255,255,255)] text-[18px] font-normal leading-normal font-vela">Найти</button>
+                        <button
+                            class="px-[20px] py-[14px] min-h-[48px] text-center flex items-center justify-center max-[767px]:p-[0px] min-[767px]:hidden max-[767px]:min-w-[47px] min-w-[137px] rounded-[4px] bg-gradient-to-bl from-[#FD8806] to-[#DB3F2C] shadow-[0px_0px_16.1px_rgba(253,136,6,0.51),_0px_4px_4px_rgba(255,255,255,0.13)_inset] text-[rgba(255,255,255)] text-[18px] font-normal leading-normal font-vela">
+                            <img src="./img/form_arrow.svg" alt="">
+                        </button>
+                    </form>
+                    <div class="social_block flex gap-6 max-[767px]:gap-[10px] items-center">
+                        <a href="#"
+                            class="py-6 max-[767px]:shadow-none max-[767px]:text-[16px] max-[767px]:py-[10px] max-[767px]:border-[1px] text-white text-[24px] font-semibold leading-[34px] font-vela rounded-[6px] border-2 border-white shadow-[inset_0px_4px_4px_rgba(255,255,255,0.13),_0px_0px_16.1px_rgba(253,136,6,0.51)] flex-1 flex justify-center">Главная</a>
+                        <a href="#"
+                            class="py-6 max-[767px]:shadow-none max-[767px]:text-[16px] max-[767px]:py-[10px] max-[767px]:border-[1px] text-white text-[24px] font-semibold leading-[34px] font-vela rounded-[6px] border-2 border-white shadow-[inset_0px_4px_4px_rgba(255,255,255,0.13),_0px_0px_16.1px_rgba(253,136,6,0.51)] flex-1 flex justify-center">Соц.
+                            сети</a>
+                    </div>
+                </div>
+                <div class=" pb-[38px] max-[1200px]:hidden">
+                    <div class="main_img">
+                        <picture>
+                            <source media="(min-width:576px)" srcset="./img/404.png">
+                            <img src="./img/mobile_404.png" alt="Flowers">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="bottom_arrow flex justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="47" viewBox="0 0 1920 47" fill="none">
+            <path
+                d="M0 1L480 1.00004L550 44.9999L600 44.1019L720 44.1019L960 44.102L1200 44.102L1320 45.102L1370 45L1440 45.0001L1920 45.0002"
+                stroke="white" stroke-opacity="0.4" stroke-width="2" />
+        </svg>
+    </div>
+    </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: "VelaSans", sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.apexcharts-canvas .apexcharts-radial-series path.apexcharts-radialbar-area {
+  filter: drop-shadow(0px 0px 30px rgba(253, 136, 6, 0.4));
+  /* Box-shadow */
+}
+
+.apexcharts-svg {
+  overflow: visible !important;
+}
+
+.result_card_body {
+  position: relative;
+  /* box-shadow: 0 0 10px 2px rgba(254, 254, 254, 0.6);  */
+  outline: 1px solid #fffefe18;
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(77deg, #db3f2c -10%, #fd8806 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .stat-gradient {
+    background: linear-gradient(257deg, #fd8806 25.37%, #db3f2c 125.31%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .show-more-gradient {
+    background: linear-gradient(257deg, #fd8806 25.37%, #db3f2c 125.31%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .show-more-shadow {
+    /* box-shadow: 0px 0px 50px 0px rgba(253, 136, 6, 0.50); */
+  }
+
+  .card-gradient {
+    background: rgb(22, 20, 35);
+    background: linear-gradient(
+      325deg,
+      rgb(24, 22, 39) 43%,
+      rgb(26, 23, 45) 53%,
+      rgb(105, 47, 0) 89%,
+      #be4d02 100%
+    );
+    backdrop-filter: blur(125px);
+  }
+}
+
+/* Swiper */
+.promotionSwiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  overflow: visible;
+  /* Yon tomonlarda kesilishni oldini olish uchun */
+}
+
+.promotionSwiper .swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  pointer-events: none;
+}
+.promotionSwiper .swiper-slide-active img {
+  transform: scale(1.25);
+  opacity: 1;
+  z-index: 2;
+}
+.promotionSwiper .swiper-slide-prev img,
+.promotionSwiper .swiper-slide-next img {
+  transform: scale(0.8);
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.promotionSwiper
+  .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-prev):not(
+    .swiper-slide-next
+  )
+  img {
+  transform: scale(0.5);
+  opacity: 0.4;
+  z-index: 0;
+}
+.view-btn {
+  opacity: 0;
+}
+.view-btn span {
+  text-align: center;
+  text-shadow: 0px 0px 50px rgba(253, 136, 6, 0.5);
+  /* font-size: 24px; */
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: linear-gradient(257deg, #fd8806 25.37%, #db3f2c 125.31%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 0.5s ease;
+}
+.promotionSwiper .swiper-slide-active .view-btn {
+  opacity: 1;
+}
+.promotionSwiper .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background: #3b3564;
+  opacity: 1;
+}
+.promotionSwiper .swiper-pagination-bullet-active {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e26009 0%, #ff8831 100%);
+  box-shadow: 0px 0px 50px rgba(253, 136, 6, 0.5);
+}
+.promotionSwiper .swiper-pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .promotionSwiper .swiper-slide-active img {
+    transform: scale(1);
+  }
+
+  .promotionSwiper .swiper-slide-prev img,
+  .promotionSwiper .swiper-slide-next img {
+    transform: scale(1);
+  }
+
+  .promotionSwiper .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    border-radius: 5px;
+    background: #3b3564;
+    opacity: 1;
+  }
+  .promotionSwiper .swiper-pagination-bullet-active {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e26009 0%, #ff8831 100%);
+    box-shadow: 0px 0px 50px rgba(253, 136, 6, 0.5);
+  }
+  .promotionSwiper .swiper-pagination {
+    margin-top: 0;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* context-adv */
+.seo_title {
+  text-shadow: 0px 0px 22.4px #3b3564;
+  background: linear-gradient(92deg, #fff 100.78%, #999 110.68%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Contextua-Advertising style start */
+.reklamaSwiper {
+  width: 100%;
+  /* height: 300px; */
+  position: relative;
+}
+.reklamaSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: none;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "prev";
+  display: none;
+}
+
+.swiper-button-next {
+  top: 50%;
+  right: 4px;
+
+  transform: translateY(-50%);
+}
+.swiper-button-prev {
+  top: 50%;
+  left: 4px;
+
+  transform: translateY(-50%);
+}
+
+.reklamaSwiper .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reklamaSwiper .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  border-radius: 5px;
+  background: #3b3564;
+}
+
+.reklamaSwiper .swiper-pagination-bullet-active {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e26009 0%, #ff8831 100%);
+  box-shadow: 0px 0px 50px rgba(253, 136, 6, 0.5);
+}
+
+.reklamaSwiper .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, -30px);
+}
+
+.table__col__bg {
+  position: relative;
+}
+
+.table__col__bg::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 653px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(241, 111, 24, 0.5) 0%,
+    rgba(241, 111, 24, 0) 100%
+  );
+}

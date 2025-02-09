@@ -1,0 +1,46 @@
+/* 'Gilroy' font */
+@font-face {
+  font-family: "Gilroy";
+  src: url(./Gilroy/Gilroy-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(./Gilroy/Gilroy-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(./Gilroy/Gilroy-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(./Gilroy/Gilroy-Regular.ttf);
+  font-weight: 400;
+}
+
+/* 'Vela Sans GX' font */
+@font-face {
+  font-family: "Vela Sans GX";
+  src: url(./Vela-Sans/VelaSans-GX.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Vela Sans GX";
+  src: url(./Vela-Sans/VelaSans-SemiBold.ttf);
+  font-weight: 600;
+}
+/* 'Greycliff CF' font */
+@font-face {
+  font-family: "Greycliff CF";
+  src: url(./GreyCliff/Greycliff-CF-Regular.otf);
+  font-weight: 400;
+}
+
+/* 'Inter' font */
+@font-face {
+  font-family: "Inter";
+  src: url(./Inter/static/Inter_18pt-Regular.ttf);
+  font-weight: 400;
+}
